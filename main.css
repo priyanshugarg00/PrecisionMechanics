@@ -97,18 +97,18 @@ input#openSidebarMenu{
     max-height: 1000px;
     width: 100%;
     margin-top: 60px;
-    padding: 10px 50px;
 }
 .p1{
     font-size: medium;
     float: left;
     width: 700px;
     height: 100%;
+    margin-left: 10px;
 }
 .img1{
     float: right;
     margin-top: 0;    
     height: 100%;
     width: 700px;
-    
+    margin-right: 10px;
 }
