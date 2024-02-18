@@ -1,7 +1,28 @@
+/* navgation bar */
 
+.navdiv{
+    width: 100%;
+    height: 60px;
+}
 .navitem{
     float: right;
-    padding-right: 2%;
+    padding-right: 5%;
     padding-top: 0%;
     color: black;
+}
+.navimg{
+    height: 60px;
+    padding-left: 20%;
+}
+navimg{
+    float: left;
+}
+
+/* information row 1*/
+
+.row1{
+    background-color: aqua;
+    height: 500px;
+    width: 100%;
+    margin-top: 10px;
 }
