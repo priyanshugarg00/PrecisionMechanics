@@ -102,13 +102,13 @@ input#openSidebarMenu{
 .p1{
     font-size: medium;
     float: left;
-    width: 50%;
-    height: 500px;
+    width: 700px;
+    height: 100%;
 }
 .img1{
     float: right;
     margin-top: 0;    
-    height: 600px;
-    width: 50%;
+    height: 100%;
+    width: 700px;
     
 }
