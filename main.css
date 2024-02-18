@@ -89,14 +89,12 @@ input#openSidebarMenu{
     margin-top: -9px;
 }
 /* information row 1*/
-.main {
-    height: 100%;
-    width: 100%;
-}
+
 
 .row1{
-    background-color: aqua;
-    height: 500px;
+    background-color: white;
+    min-height: 500px;
+    max-height: 1000px;
     width: 100%;
     margin-top: 60px;
     padding: 10px 50px;
@@ -104,13 +102,13 @@ input#openSidebarMenu{
 .p1{
     font-size: medium;
     float: left;
-    margin-left: 10%;
-    width: 40%;
+    width: 50%;
     height: 500px;
 }
 .img1{
-    float: right;    
-    margin-right: 10%;
-    height: 500px;
-    width: 40%;
+    float: right;
+    margin-top: 0;    
+    height: 600px;
+    width: 50%;
+    
 }
