@@ -93,22 +93,21 @@ input#openSidebarMenu{
 
 .row1{
     background-color: white;
-    min-height: 500px;
-    max-height: 1000px;
+    height: 500px;
     width: 100%;
     margin-top: 60px;
+    background-color:antiquewhite
 }
-.p1{
-    font-size: medium;
+.RowElement1{
+    height: 500px;
+    width: 600px;
     float: left;
-    width: 700px;
-    height: 100%;
-    margin-left: 10px;
+    background-color: blue;
+    margin-left: 20%;
 }
-.img1{
-    float: right;
-    margin-top: 0;    
-    height: 100%;
-    width: 700px;
-    margin-right: 10px;
+.RowElement2{
+    height: 500px;
+    width: 600px;
+    float: left;
+    background-color: royalblue;
 }
