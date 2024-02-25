@@ -96,18 +96,14 @@ input#openSidebarMenu{
     height: 500px;
     width: 100%;
     margin-top: 60px;
-    background-color:antiquewhite
 }
 .RowElement1{
     height: 500px;
-    width: 600px;
+    width: 800px;
     float: left;
-    background-color: blue;
-    margin-left: 20%;
-}
+}   
 .RowElement2{
     height: 500px;
-    width: 600px;
-    float: left;
-    background-color: royalblue;
+    width: 715px;
+    float: right;  
 }
