@@ -93,18 +93,26 @@ input#openSidebarMenu{
 
 .row1{
     background-color: white;
-    height: 500px;
+    height: 100%;
     width: 100%;
     margin-top: 60px;
 }
+.rowaline{
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .RowElement1{
     height: 500px;
-    width: 800px;
-    float: left;
+    width: 600px;
     text-align: left;
+    float: left;
+    margin-right: 0px;
 }   
 .RowElement2{
     height: 500px;
-    width: 715px;
-    float: right;  
+    width: 600px;
+    float: right;
+    margin-left: 0px;
 }
