@@ -89,31 +89,3 @@ input#openSidebarMenu{
     transform: rotate(-135deg);
     margin-top: -9px;
 }
-/* information row 1*/
-
-
-.row1{
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    margin-top: 60px;
-}
-.rowaline{
-    height: 100%;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.RowElement1{
-    height: 500px;
-    width: 600px;
-    text-align: left;
-    float: left;
-    margin-right: 0px;
-}   
-.RowElement2{
-    height: 500px;
-    width: 600px;
-    float: right;
-    margin-left: 0px;
-}
