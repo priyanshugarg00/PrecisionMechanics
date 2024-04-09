@@ -22,16 +22,16 @@
   </label>
   <div id="sidebarMenu">
       <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="careers.html">Career</a></li>
-        <li><a href="mechanic/msign up.html">Mechanic Sign Up</a></li>
-        <li><a href="mechanic/msign in.html">Mechanic Sign In</a></li>
-        <li><a href="customer/customer term.html">Customer Terms</a></li>
-        <li><a href="customer/ev customer terms.html">EV Customer Terms</a></li>
-        <li><a href="mechanic/mechanic terms.html">Mechanic Terms</a></li>
-        <li><a href="mechanic/ev mechanic terms.html">EV Mechanic Terms</a></li>
-        <li><a href="about us.html">About Us</a></li>
-        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="careers.php">Career</a></li>
+        <li><a href="mechanic/msign up.php">Mechanic Sign Up</a></li>
+        <li><a href="mechanic/msign in.php">Mechanic Sign In</a></li>
+        <li><a href="customer/customer term.php">Customer Terms</a></li>
+        <li><a href="customer/ev customer terms.php">EV Customer Terms</a></li>
+        <li><a href="mechanic/mechanic terms.php">Mechanic Terms</a></li>
+        <li><a href="mechanic/ev mechanic terms.php">EV Mechanic Terms</a></li>
+        <li><a href="about us.php">About Us</a></li>
+        <li><a href="contact us.php">Contact Us</a></li>
       </ul>
   </div>
 
@@ -45,7 +45,7 @@
               quidem
               dolores id neque quisquam? Pariatur cum cumque a neque excepturi nulla dignissimos, earum ut
               accusamus consequatur?</p>
-          <a href="" class="btn"> Explore cars</a>
+          <a href="customer/sign in.html" class="btn"> Explore Mechanics</a>
       </div>
       <div class="header-right">
           <div class="square-box">

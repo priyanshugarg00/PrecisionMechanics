@@ -158,6 +158,7 @@ header {
 .header-left {
     max-width: 630px;
     position: relative;
+    margin-left: 10px;
 }
 
 .header-left h1 {

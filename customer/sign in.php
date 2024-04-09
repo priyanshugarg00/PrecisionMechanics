@@ -50,7 +50,7 @@
                 <input type="checkbox" name="" id="" required> <a href="customer term.html">Terms and Conditions</a>
                 <br>
                 <input type="checkbox" name="" id="" required> <a href="ev customer terms.html">Terms and Conditions For EV</a>
-                <br>
+                <br> 
                 <input type="submit" value="submit">
                 <input type="reset" value="reset">
     
