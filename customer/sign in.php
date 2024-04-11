@@ -36,21 +36,21 @@
 
 <!--Form-->                              
     <div>
-        <form action="customer main.html" method="post" style="margin-top: 70px; margin-left: 10px;">
+        <form action="customer main.php" method="post" style="margin-top: 70px; margin-left: 10px;">
             <fieldset style="width: 300px;">
                 <legend>User login</legend>
                 EMAIL: <input type="text" placeholder="email..." required>
-                <br>
+                <br><br>
                 CONTACT NO: <input type="number" placeholder="phone no.." required>
-                <br>
+                <br><br>
                 LOCATION: <input type="txt" placeholder="Locatin..." required>
-                <br>
+                <br><br>
                 NAME: <input type="text" placeholder="name..." required>
-                <br>
+                <br><br>
                 <input type="checkbox" name="" id="" required> <a href="customer term.html">Terms and Conditions</a>
-                <br>
+                <br><br>
                 <input type="checkbox" name="" id="" required> <a href="ev customer terms.html">Terms and Conditions For EV</a>
-                <br> 
+                <br> <br>
                 <input type="submit" value="submit">
                 <input type="reset" value="reset">
     

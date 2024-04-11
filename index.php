@@ -45,7 +45,7 @@
               quidem
               dolores id neque quisquam? Pariatur cum cumque a neque excepturi nulla dignissimos, earum ut
               accusamus consequatur?</p>
-          <a href="customer/sign in.html" class="btn"> Explore Mechanics</a>
+          <a href="customer/sign in.php" class="btn"> Explore Mechanics</a>
       </div>
       <div class="header-right">
           <div class="square-box">

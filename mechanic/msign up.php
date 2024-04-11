@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style_logic/main.css">
+    <link rel="stylesheet" href="../style_logic/formStyle.css">
+
 </head>
 <body>
     <!--nav bar-->
@@ -36,7 +38,7 @@
 
 <!--Form-->
     <div>
-        <form action="mechanic main.html" method="post" style="margin-top: 70px; margin-left: 10px;">
+        <form action="mechanic main.php" method="post" style="margin-top: 70px; margin-left: 10px;">
             <fieldset style="width: 400px;">
         <legend>Mechanic Register Form</Form></legend>
         NAME: <input type="text" placeholder="name..." name="name" required>
