@@ -32,6 +32,18 @@
         <li><a href="contact us.html">Contact Us</a></li>
       </ul>
   </div>
-
+  <br><br><br><br><br><br>
+  <div>
+  <center><iframe src="https://www.google.com/maps/d/embed?mid=1lmfbIOvwa-ce9vOBgm7hhU0JUOAeQLE&ehbc=2E312F" width="640" height="480"></iframe></center>
+  </div>
 </body>
 </html>
+
+<?php
+session_start();
+
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true){
+    header("location: msign in.html");
+    exit;
+}
+?>

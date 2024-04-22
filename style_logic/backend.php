@@ -5,16 +5,16 @@ echo "backend FILE";
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "test2";
+$database = "test";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-else {
+/*else {
     echo "Connected successfully";
-}
+}*/
 
 // create database
 
@@ -40,13 +40,13 @@ else {
 
 // insert data
 
-$sql = "INSERT INTO `student` (`sno`, `name`, `id`, `class`) VALUES ('2', 'paras', '002', 'ftd')";
+/*$sql = "INSERT INTO `student` (`sno`, `name`, `id`, `class`) VALUES ('2', 'paras', '002', 'ftd')";
 $result = mysqli_query($conn, $sql);
 if ($result) {
     echo "record insert successfully";
 } 
 else {
     echo "record not insert successfully". mysqli_error($conn);
-}
+}*/
 
 ?>

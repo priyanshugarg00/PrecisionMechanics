@@ -182,7 +182,7 @@ header {
     margin: 15px 0 30px;
     line-height: 150%;
     font-size: 16px;
-
+    
 }
 
 .header-container {
@@ -201,6 +201,7 @@ header {
     transform: rotate(45deg);
     right: -7%;
     left:300px;
+    
 
 
 }

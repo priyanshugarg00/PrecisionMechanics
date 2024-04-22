@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style_logic/main.css">
-    <link rel="stylesheet" href="../style_logic/formStyle.css">
 
 </head>
 <body>
@@ -36,21 +35,21 @@
       </ul>
   </div>
 
-<!--Form-->
+<!--Form real-->
     <div>
-        <form action="mechanic main.php" method="post" style="margin-top: 70px; margin-left: 10px;">
+        <form action="msign up.php" method="post" style="margin-top: 70px; margin-left: 10px;">
             <fieldset style="width: 400px;">
         <legend>Mechanic Register Form</Form></legend>
-        NAME: <input type="text" placeholder="name..." name="name" required>
+        USERNAME: <input type="text" placeholder="name..." name="username" required>
         <br><br>
         CONTACT NO: <input type="number" placeholder="phone no.." name="contact" required>
         <br><br>
         EMAIL: <input type="email" placeholder="email..." name="email" required>
+      <!--  <br><br>
+        LOCATION: <input type="" placeholder="Locatin..." name="Locatin" required>-->
         <br><br>
-        LOCATION: <input type="" placeholder="Locatin..." name="Locatin" required>
-        <br><br>
-        EXPERIENCE <input type="years" name="EXPERIENCE" id="" required>
-        <br><br>
+        EXPERIENCE <input type="years" name="experience" required>
+       <!-- <br><br>
         TYPE OF VEHICLE REPAIR<br>
                 <input type="checkbox" name="type_T_W> TWO WHEELER <br> 
                 <input type="checkbox" name="type_F_W"> FOUR WHEELER <br>
@@ -64,8 +63,8 @@
         <input type="file" name="id" id="" required>
         <br><br>
         DRIVING LICENSE
-        <input type="file" name="dl" id="" required>
-        <br><br>
+        <input type="file" name="dl" id="" required>-->
+        <br><br> 
         <input type="checkbox" name="" id="" required> <a href="mechanic terms.html">Terms and Conditions</a>
         <br>
         <input type="checkbox" name="" id="" required> <a href="ev mechanic terms.html">Terms and Conditions For EV</a>
@@ -76,5 +75,38 @@
     </fieldset>
 </form>
 </div>
+
 </body>
 </html>
+<?php
+$showError = false;
+$showAlert = false;
+
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+    include '../style_logic/backend.php';  // link to the database 
+    $username = $_POST['username'];
+    $contact= $_POST['contact'];
+    $email = $_POST['email'];
+    $experience = $_POST['experience'];
+
+    // check exist user 
+
+   $existSql = "SELECT * FROM `login` WHERE 'username' = '$username'";
+   $result = mysqli_query($conn, $existSql);
+   $numExistRows = mysqli_num_rows($result);
+   if ($numExistRows > 0){
+    $showError = "Username Already Exists";
+   }
+   else{
+   // if (($password == $cpassword)) {
+      $sql = "INSERT INTO `login` (`username`, `contact`, `email`, `experience`) VALUES ('$username', '$contact', '$email', '$experience');";
+      $result = mysqli_query($conn, $sql);
+ // } else {
+ //     echo "password are not matching";
+ // }
+   } 
+}
+
+?>

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mechanic infomation</title>
     <link rel="stylesheet" href="../style_logic/main.css">
-    <link rel="stylesheet" href="../style_logic/formStyle.css">
 </head>
 <body>
     <!--nav bar-->
@@ -37,22 +36,51 @@
 
 <!--Form-->
     <div>
-        <form action="mechanic main.php" method="post" style="margin-top: 70px; margin-left: 10px;">
+        <form action="msignin.php" method="post" style="margin-top: 70px; margin-left: 10px;">
             <fieldset style="width: 300px;">
                 <legend>Mechanic login Form</legend>
-                EMAIL: <input type="text" placeholder="email..." required>
+                EMAIL: <input id="email" name="email" type="text" placeholder="email..." required>
                 <br/>
                 <br/>
-                CONTACT NO: <input type="number" placeholder="phone no.." required>
+                USERNAME: <input id="name" name="username" type="text" placeholder="name..." required>
                 <br>
                 <input type="checkbox" name="" id="" required> <a href="mechanic terms.html">Terms and Conditions</a>
                 <br>
-                <input type="checkbox" name="" id="" required> <a href="ev mechanic terms.html">Terms and Conditions For EV</a>
-                <br>
+                <input type="checkbox" name="" id="" required> <a href="ev mechanic terms.html">Terms and Conditions For EV</a>  
+                <br><br>
                 <input type="submit" value="submit">
                 <input type="reset" value="reset">
             </fieldset>
         </form>
     </div>
-</body>
-</html>
+
+<!--php -->
+
+<?php
+$login = false;
+$showError = false;
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+    include '../style_logic/backend.php';
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+
+    
+   
+        $sql = "select * from login where username='$username' AND email='$email'";
+        $result = mysqli_query($conn, $sql);
+        $num = mysqli_num_rows($result);
+        if ($num == 1){
+           $login = true;
+           session_start();
+           $_SESSION['loggedin'] = true;
+           $_SESSION['username'] = $username;
+           header("location: mechanic main.php");
+        }
+        else {
+           $showError = "Invalid Credentials";
+           
+        }
+}
+
+?>
