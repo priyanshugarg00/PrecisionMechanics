@@ -78,8 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
            header("location: mechanic main.php");
         }
         else {
-           $showError = "Invalid Credentials";
-           
+           $showError = "Invalid Credentials"; 
         }
 }
 

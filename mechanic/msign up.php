@@ -103,6 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    // if (($password == $cpassword)) {
       $sql = "INSERT INTO `login` (`username`, `contact`, `email`, `experience`) VALUES ('$username', '$contact', '$email', '$experience');";
       $result = mysqli_query($conn, $sql);
+      echo "success full register";
  // } else {
  //     echo "password are not matching";
  // }

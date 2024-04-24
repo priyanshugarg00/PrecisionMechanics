@@ -36,7 +36,7 @@
 
 <!--Form-->                              
     <div>
-        <form action="customer main.php" method="post" style="margin-top: 70px; margin-left: 10px;">
+        <form action="sign in.php" method="post" style="margin-top: 70px; margin-left: 10px;">
             <fieldset style="width: 300px;">
                 <legend>User login</legend>
                 EMAIL: <input type="text" name="email" placeholder="email..." required>
@@ -45,7 +45,7 @@
                <!-- <br><br>
                 LOCATION: <input type="txt" name="location" placeholder="Locatin..." required>  -->
                 <br><br>
-                NAME: <input type="text" name="name" placeholder="name..." required>
+                USERNAME: <input type="text" name="username" placeholder="name..." required>
                 <br><br>
                 <input type="checkbox" name="" id="" required> <a href="customer term.html">Terms and Conditions</a>
                 <br><br>
@@ -62,39 +62,36 @@
 </html>
 
 <?php
-if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $email=$_POST['email'];
-    $name=$_POST['name'];
-    $contact=$_POST['contact'];
+$login = false;
+$showError = false;
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
+    include '../style_logic/backend.php';
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+    $contact = $_POST["contact"];
     
-  // link to the database 
-echo "backend FILE";
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "test2";
-
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+   
+        $sql = "select * from c_login where username='$username' AND email='$email'";
+        $result = mysqli_query($conn, $sql);
+        $num = mysqli_num_rows($result);
+        if ($num == 1){
+           $login = true;
+           session_start();
+           $_SESSION['loggedin'] = true;
+           $_SESSION['username'] = $username;
+           header("location: customer main.php");
+           echo "logged in";
+        }
+        else {
+           $sql1 = "INSERT INTO `c_login` (`username`, `contact`, `email`) VALUES ('$username', '$contact', '$email');";
+           $result = mysqli_query($conn, $sql1);
+           $login = true;
+           session_start();
+           $_SESSION['loggedin'] = true;
+           $_SESSION['username'] = $username;
+           header("location: customer main.php");
+           echo "logged in";
+        }
 }
-else {
-    //data insert quiry
-    $sql = "INSERT INTO `student` (`name`, `email`, `contact no`) VALUES ('$name', '$email', '$contact')";
-$result = mysqli_query($conn, $sql);
-if ($result) {
-    echo '<div class="alert alert-success" role="alert"> 
-    <br><br><br><br><br><br><br><br>
-    strong>Success!</strong> Your email ' .$email.'and contact no '.$contact.'and name is '.$name.'and location is ';
-} 
-else {
-    echo "record not insert successfully". mysqli_error($conn);
-}
-}
-}
-
-
 ?>
