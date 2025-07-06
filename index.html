@@ -5,60 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Precision Mechanics</title>
   <link rel="stylesheet" href="style_logic/main.css">
-  
-  </head>
+</head>
 <body>
-    <!--nav bar-->
-
-  <div class="header">
-    <img src="img/logo.jpeg" alt=""  style="float: right; height: 50px; width: 50px; margin-top: 5px; margin-right: 15px;">
-  </div>
-  
-  <input type="checkbox" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-      <div class="spinner top"></div>
-      <div class="spinner middle"></div>
-      <div class="spinner bottom"></div>
-  </label>
-  <div id="sidebarMenu">
-      <ul class="menu">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">Precision Mechanics</a>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="careers.php">Career</a></li>
         <li><a href="mechanic/msign up.php">Mechanic Sign Up</a></li>
         <li><a href="mechanic/msignin.php">Mechanic Sign In</a></li>
         <li><a href="customer/customer term.php">Customer Terms</a></li>
-        <li><a href="customer/ev customer terms.php">EV Customer Terms</a></li>
-        <li><a href="mechanic/mechanic terms.php">Mechanic Terms</a></li>
-        <li><a href="mechanic/ev mechanic terms.php">EV Mechanic Terms</a></li>
         <li><a href="about us.php">About Us</a></li>
         <li><a href="contact us.php">Contact Us</a></li>
       </ul>
-  </div>
+    </div>
+  </nav>
 
-<!-- *************start Header-cantainer************-->
-<header>
-  <div class="header-container">
+  <!-- Header -->
+  <header>
+    <div class="header-container">
       <div class="header-left">
-          <h1>Vehicle Repair Experience......</h1>
-          <h4> Driving Confidence, One Repair at a Time.</h4><br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident, totam ipsam odit
-              quidem
-              dolores id neque quisquam? Pariatur cum cumque a neque excepturi nulla dignissimos, earum ut
-              accusamus consequatur?</p>
-          <a href="customer/sign in.php" class="btn"> Explore Mechanics</a>
+        <h1>Vehicle Repair Experience......</h1>
+        <h4> Driving Confidence, One Repair at a Time.</h4><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore provident, totam ipsam odit
+          quidem
+          dolores id neque quisquam? Pariatur cum cumque a neque excepturi nulla dignissimos, earum ut
+          accusamus consequatur?</p>
+        <a href="customer/sign in.php" class="btn"> Explore Mechanics</a>
       </div>
       <div class="header-right">
-          <div class="square-box">
-              <img src="img/car.jpg">
-          </div>
+        <div class="square-box">
+          <img src="img/car.jpg" alt="Car">
+        </div>
       </div>
-  </div>
-  <div class="square-box"></div>
-</header>
+    </div>
+  </header>
 
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="about-us">
+      <h2>About Us</h2>
+      <p>Learn more about our company and our mission.</p>
+    </section>
 
-   
+    <section class="featured-services">
+      <h2>Featured Services</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Service 1</h3>
+          <p>Description of service 1.</p>
+        </div>
+        <div class="service-item">
+          <h3>Service 2</h3>
+          <p>Description of service 2.</p>
+        </div>
+        <div class="service-item">
+          <h3>Service 3</h3>
+          <p>Description of service 3.</p>
+        </div>
+      </div>
+    </section>
 
-   
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Get in touch with us for any inquiries.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Precision Mechanics. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.php">About Us</a></li>
+        <li><a href="contact us.php">Contact Us</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
